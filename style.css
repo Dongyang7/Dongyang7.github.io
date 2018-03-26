@@ -1,0 +1,110 @@
+:root {
+	--right-padding: 4%;
+	--left-padding: 4%;
+}
+html {
+	width: 100%;
+	height: 100%;
+	/*background-color: grey;*/
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #939393;
+	font-weight: 400;
+}
+/*the next 4 elements deal with the multicolum height problem*/
+section {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+#section1, #section3, #section5 {
+	background-color: #fbfbfb;
+}
+#section2, #section4, #section6 {
+	background-color: #f8f8f8;
+}
+.container {
+	float: left;
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+	left: 30%;
+}
+#section1 .container, #section3 .container, #section5 .container {
+	background-color: #fff;
+}
+#section2 .container, #section4 .container, #section6 .container {
+	background-color: #fcfcfc;
+}
+.left {
+	float: left;
+	width: 30%;
+	position: relative;
+	right: 34%;
+	padding: var(--left-padding);
+}
+.right {
+	float: left;
+	width: 54%;
+	position: relative;
+	right: 34%;
+	padding: var(--right-padding);
+/*	background-color: gold;*/
+}
+.titlecontainer {
+	padding: 10%;
+	text-align: end;
+}
+#profileimg {
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+h1, h2, h3, h4 {
+	color: #727272;
+}
+#jobandicon {
+	overflow: hidden;
+	margin-bottom: 0;
+}
+#jobtitle {
+	float: left;
+	width: 50%;
+    margin-top: 10%;
+}
+#iconlist {
+	float: right;
+	margin-top: 10%;
+    margin-bottom: 0;
+}
+.icons {
+	text-decoration: none;
+	list-style: none;
+	display: inline;
+}
+#basic {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	border-top: 2px solid #ececec;
+}
+.innerbasic {
+	float: left;
+	width: 25%;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: 0.3s;
+}
+a:hover {
+	color: #F8BB10;
+}
+p {
+	font-size: 1.22rem;
+}
